@@ -2,6 +2,21 @@ using System;
 
 public class Registro
 {
+	public static void InformarDadosResponsaveis()
+    {
+        Console.WriteLine("CPF do pai:");
+        string cpfPai = Console.ReadLine();
+
+        Console.WriteLine("CPF da mãe:");
+        string cpfMae = Console.ReadLine();
+
+        Console.WriteLine("Nome do pai:");
+        string pai = Console.ReadLine();
+
+        Console.WriteLine("Nome da mãe:");
+        string mae = Console.ReadLine();
+    }
+	
     public static void Main()
     {
         Console.WriteLine("Digite sua idade:");
@@ -21,30 +36,22 @@ public class Registro
             if (escolha == "sim")
             {
                 Console.WriteLine("Digite o seu CPF:");
-                string Senha = Console.ReadLine();
-				
+                string cpf = Console.ReadLine();
+
                 Console.WriteLine("Digite seu nome:");
-				string Nome = Console.ReadLine();
-				
-				Console.WriteLine("Data de nascimento");
-				string Idade = Console.ReadLine();
-				
-				Console.WriteLine("Nome do pai");
-				string Pai = Console.ReadLine();
-				
-				Console.WriteLine("CPF do pai");
-				string CPFPai = Console.ReadLine();
-				
-				Console.WriteLine("Nome da mae");
-				string Mae = Console.ReadLine();
-				
-				Console.WriteLine("CPF da mae");
-				string CPFMae = Console.ReadLine();
+                string nome = Console.ReadLine();
+
+                Console.WriteLine("Data de nascimento:");
+                string dataNascimento = Console.ReadLine();
+
+                InformarDadosResponsaveis();
             }
             else
             {
-                Console.WriteLine("obrigado por visitar nosso site");
+                Console.WriteLine("Obrigado por visitar nosso site.");
             }
         }
     }
+
+    
 }
