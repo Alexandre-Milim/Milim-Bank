@@ -17,6 +17,23 @@ public class Registro
         string mae = Console.ReadLine();
     }
 	
+	public static void InformarDadosDoMenor()
+	{
+		Console.WriteLine("Digite o seu CPF:");
+        string cpf = Console.ReadLine();
+
+		Console.WriteLine("Digite seu nome:");
+		string nome = Console.ReadLine();
+
+		Console.WriteLine("Data de nascimento:");
+		string dataNascimento = Console.ReadLine();
+	}
+	
+	private static void Senha()
+	{
+		
+	}
+	
     public static void Main()
     {
         Console.WriteLine("Digite sua idade:");
@@ -35,16 +52,11 @@ public class Registro
 
             if (escolha == "sim")
             {
-                Console.WriteLine("Digite o seu CPF:");
-                string cpf = Console.ReadLine();
-
-                Console.WriteLine("Digite seu nome:");
-                string nome = Console.ReadLine();
-
-                Console.WriteLine("Data de nascimento:");
-                string dataNascimento = Console.ReadLine();
-
+				InformarDadosDoMenor();
                 InformarDadosResponsaveis();
+				
+				Console.WriteLine("Digite sua senha");
+				string senha = Console.ReadLine(); 
             }
             else
             {
@@ -52,6 +64,4 @@ public class Registro
             }
         }
     }
-
-    
 }
